@@ -1,0 +1,6 @@
+framework module BKeyboard {
+  umbrella header "BKeyboard.h"
+
+  export *
+  module * { export * }
+}

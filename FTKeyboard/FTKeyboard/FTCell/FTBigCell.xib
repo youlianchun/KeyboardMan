@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FTBigCell">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kpe-iy-bT0">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Kpe-iy-bT0" secondAttribute="height" multiplier="1:1" id="24d-ov-omF"/>
+                            <constraint firstAttribute="width" constant="60" id="fb1-Nk-xaY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qe-C1-ITu">
+                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Kpe-iy-bT0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2z6-0K-vWZ"/>
+                <constraint firstItem="3qe-C1-ITu" firstAttribute="width" secondItem="Kpe-iy-bT0" secondAttribute="width" id="Biv-c8-qzX"/>
+                <constraint firstAttribute="bottom" secondItem="3qe-C1-ITu" secondAttribute="bottom" id="HQt-KB-jN0"/>
+                <constraint firstItem="3qe-C1-ITu" firstAttribute="top" secondItem="Kpe-iy-bT0" secondAttribute="bottom" id="QwC-fK-GpE"/>
+                <constraint firstItem="Kpe-iy-bT0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="kf7-CQ-Kgd"/>
+                <constraint firstItem="3qe-C1-ITu" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="lgi-MK-zbq"/>
+            </constraints>
+            <connections>
+                <outlet property="_imageView" destination="Kpe-iy-bT0" id="7u5-96-pnM"/>
+                <outlet property="_imageViewTop" destination="2z6-0K-vWZ" id="8rx-1j-GTG"/>
+                <outlet property="_label" destination="3qe-C1-ITu" id="Ztt-DU-YfE"/>
+            </connections>
+            <point key="canvasLocation" x="-49" y="4.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
