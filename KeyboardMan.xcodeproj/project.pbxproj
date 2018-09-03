@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92142BB210C65D6004F9318 /* FTEmojiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A92142B9210C65D6004F9318 /* FTEmojiCell.m */; };
+		A92142BC210C65D6004F9318 /* FTEmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92142BA210C65D6004F9318 /* FTEmojiCell.xib */; };
 		A9301DDE20FB4B98000EAF9D /* ATProxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9301DDC20FB4A0F000EAF9D /* ATProxy.framework */; };
 		A9301DDF20FB4BA5000EAF9D /* ATProxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9301DDC20FB4A0F000EAF9D /* ATProxy.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A98964CF20F5960E0057FFFB /* OvalMaskTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A98964CE20F5960E0057FFFB /* OvalMaskTransition.m */; };
@@ -49,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A92142B9210C65D6004F9318 /* FTEmojiCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTEmojiCell.m; sourceTree = "<group>"; };
+		A92142BA210C65D6004F9318 /* FTEmojiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FTEmojiCell.xib; sourceTree = "<group>"; };
 		A9301DDC20FB4A0F000EAF9D /* ATProxy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ATProxy.framework; sourceTree = "<group>"; };
 		A98964CB20F4B4FD0057FFFB /* OvalMaskTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OvalMaskTransition.h; sourceTree = "<group>"; };
 		A98964CE20F5960E0057FFFB /* OvalMaskTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OvalMaskTransition.m; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 				A9CE5F9920F331FC00DBF202 /* FTMenuCell.xib */,
 				A9CE5F9A20F331FC00DBF202 /* FTSmallCell.m */,
 				A9CE5F9B20F331FC00DBF202 /* FTSmallCell.xib */,
+				A92142B9210C65D6004F9318 /* FTEmojiCell.m */,
+				A92142BA210C65D6004F9318 /* FTEmojiCell.xib */,
 				A9CE5F9C20F331FC00DBF202 /* FTSmallCellHead.m */,
 				A9CE5F9D20F331FC00DBF202 /* FTSmallCellHead.xib */,
 			);
@@ -348,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9CE5F8A20F331CB00DBF202 /* LaunchScreen.storyboard in Resources */,
+				A92142BC210C65D6004F9318 /* FTEmojiCell.xib in Resources */,
 				A9CE5FBC20F331FC00DBF202 /* FTSmallCellHead.xib in Resources */,
 				A9CE5FBA20F331FC00DBF202 /* FTSmallCell.xib in Resources */,
 				A9896ADF20F619680057FFFB /* keyboard.bundle in Resources */,
@@ -395,6 +402,7 @@
 				A9CE68F420F4820100DBF202 /* FTSettingController.m in Sources */,
 				A9CE5F8D20F331CB00DBF202 /* main.m in Sources */,
 				A9CE5F7F20F331CA00DBF202 /* AppDelegate.m in Sources */,
+				A92142BB210C65D6004F9318 /* FTEmojiCell.m in Sources */,
 				A9CE5FBD20F331FC00DBF202 /* FTKCController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

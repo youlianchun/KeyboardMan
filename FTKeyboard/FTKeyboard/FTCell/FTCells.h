@@ -18,7 +18,6 @@
 
 @protocol FTCellProtocol<NSObject>
 @property (nonatomic, readonly) FTData *data;
-@property (nonatomic, readonly) UIImage *image;
 - (void)setData:(FTData *)data;
 @end
 
@@ -28,6 +27,9 @@
 
 @interface FTSmallCell : FTBaseNibCell<FTCellProtocol>
 @property (nonatomic, readonly) BOOL isEmoji;
+@end
+
+@interface FTEmojiCell : FTBaseNibCell <FTCellProtocol>
 @end
 
 @interface FTBigCell : FTBaseNibCell <FTCellProtocol>

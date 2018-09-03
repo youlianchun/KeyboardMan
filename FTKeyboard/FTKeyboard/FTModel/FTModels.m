@@ -60,6 +60,45 @@ static UIImage *gifFromData(NSData * data) {
     return animatedImage;
 }
 
+
+@interface FTCache:NSObject
+@end
+static FTCache *ftCache;
+@implementation FTCache
+{
+    NSCache *_cache;
+}
++(UIImage*)imageForKey:(NSString*)key get:(UIImage*(^)(NSString*key))get {
+    UIImage *image = [[FTCache cache] imageForKey:key];
+    if (!image) {
+        image = get(key);
+        [[FTCache cache] setImage:image forKey:key];
+    }
+    return image;
+}
+
++(instancetype)cache {
+    if (!ftCache) {
+        ftCache = [[FTCache alloc] init];
+    }
+    return ftCache;
+}
+-(instancetype)init {
+    self = [super init];
+    if (self) {
+        _cache = [[NSCache alloc] init];
+    }
+    return self;
+}
+- (UIImage *)imageForKey:(NSString *)key {
+    return [_cache objectForKey:key];
+}
+- (void)setImage:(UIImage*)image forKey:(NSString*)key {
+    [_cache setObject:image forKey:key];
+}
+
+@end
+
 @interface FTData ()
 @property (nonatomic, copy) NSString *file;
 @property (nonatomic, copy) NSString *name;
@@ -168,20 +207,28 @@ static bool hasFile(NSString *file) {
 
 -(UIImage *)gifImg {
     if (self.gifPath) {
-        return gifFromData([NSData dataWithContentsOfFile:_gifPath]);
+        return [FTCache imageForKey:_gifPath get:^UIImage *(NSString *key) {
+            return gifFromData([NSData dataWithContentsOfFile:key]);
+        }];
     }
     if (self.pngPath) {
-        return [UIImage imageWithContentsOfFile:_pngPath];
+        return [FTCache imageForKey:_pngPath get:^UIImage *(NSString *key) {
+            return [UIImage imageWithContentsOfFile:key];
+        }];
     }
     return nil;
 }
 
 -(UIImage *)pngImg {
     if (self.pngPath) {
-        return [UIImage imageWithContentsOfFile:_pngPath];
+        return [FTCache imageForKey:_pngPath get:^UIImage *(NSString *key) {
+            return [UIImage imageWithContentsOfFile:key];
+        }];
     }
     if (self.gifPath) {
-        return [UIImage imageWithContentsOfFile:_gifPath];
+        return [FTCache imageForKey:_gifPath get:^UIImage *(NSString *key) {
+            return [UIImage imageWithContentsOfFile:key];
+        }];
     }
     return nil;
 }
