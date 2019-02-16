@@ -31,11 +31,11 @@
 }
 
 - (IBAction)change2BKeyboard:(id)sender {
-    [_textView change2BKeyboard];
+    [_textView useBKeyboard];
 }
 
 - (IBAction)change2DefKeyboard:(id)sender {
-    [_textView change2DefKeyboard];
+    [_textView useDefKeyboard];
 }
 
 - (void)keyboardWillShow:(NSNotification *)notification {

@@ -8,14 +8,16 @@
 //  Blank Keyboard
 
 #import <Foundation/Foundation.h>
+
 @class UIView;
 @class UIViewController;
 
 @interface BKeyboard : NSObject
 @property(nonatomic, readonly) UIView *view;
-@property(nonatomic, strong) UIViewController *rootViewController;
+@property(nonatomic, strong) __kindof UIViewController *rootViewController;
 - (instancetype)initWithHeight:(NSUInteger)height NS_DESIGNATED_INITIALIZER;
 - (void)show NS_REQUIRES_SUPER;
 - (void)hide NS_REQUIRES_SUPER;
 + (BOOL)endEditing:(BOOL)force;
 @end
+

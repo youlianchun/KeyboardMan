@@ -62,6 +62,7 @@ static BOOL createPathIfNeed(NSString *path) {
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [self emoji];
+    
     return YES;
 }
 

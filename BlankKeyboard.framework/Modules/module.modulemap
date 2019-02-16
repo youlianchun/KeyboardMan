@@ -1,0 +1,6 @@
+framework module BlankKeyboard {
+  umbrella header "BlankKeyboard.h"
+
+  export *
+  module * { export * }
+}

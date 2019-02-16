@@ -6,7 +6,7 @@
 //  Copyright © 2018年 ylchun. All rights reserved.
 //
 
-#import <BKeyboard/Keyboard.h>
+#import <BlankKeyboard/BlankKeyboard.h>
 #import <UIKit/UITextView.h>
 @class FTData;
 @protocol FTKeyInput <NSObject>

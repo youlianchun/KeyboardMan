@@ -81,6 +81,7 @@
 
 
 @interface FTTextView()<FTKeyInput>
+@property (nonatomic, strong)BKeyboard *bKeyboard;
 @end
 @implementation FTTextView
 
@@ -102,12 +103,12 @@
 }
 
 -(void)setupKeyboard {
-    if (self.bKeyboard) return;
+    if (self.usedBKeyboard) return;
     self.bKeyboard = [[FTKeyboard alloc] initWithDelegate:self];
 }
 
 - (BOOL)resignFirstResponder {
-    [self change2DefKeyboard];
+    [self useBKeyboard];
     return [super resignFirstResponder];
 }
 

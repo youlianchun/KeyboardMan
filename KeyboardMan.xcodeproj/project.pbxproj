@@ -11,6 +11,8 @@
 		A92142BC210C65D6004F9318 /* FTEmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92142BA210C65D6004F9318 /* FTEmojiCell.xib */; };
 		A9301DDE20FB4B98000EAF9D /* ATProxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9301DDC20FB4A0F000EAF9D /* ATProxy.framework */; };
 		A9301DDF20FB4BA5000EAF9D /* ATProxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9301DDC20FB4A0F000EAF9D /* ATProxy.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		A9309FA522180F0100237B55 /* BlankKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9309FA422180F0000237B55 /* BlankKeyboard.framework */; };
+		A9309FA622180F0100237B55 /* BlankKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9309FA422180F0000237B55 /* BlankKeyboard.framework */; };
 		A98964CF20F5960E0057FFFB /* OvalMaskTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A98964CE20F5960E0057FFFB /* OvalMaskTransition.m */; };
 		A98964D520F5A7F90057FFFB /* EmojiImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A98964D420F5A7F90057FFFB /* EmojiImage.m */; };
 		A9896ADF20F619680057FFFB /* keyboard.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A9896ADE20F619680057FFFB /* keyboard.bundle */; };
@@ -38,14 +40,12 @@
 		A9CE5FC420F331FC00DBF202 /* FTBigPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CE5FAE20F331FC00DBF202 /* FTBigPreview.xib */; };
 		A9CE5FC520F331FC00DBF202 /* FTPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CE5FB020F331FC00DBF202 /* FTPreviewView.m */; };
 		A9CE5FC620F331FC00DBF202 /* FTSmallPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CE5FB120F331FC00DBF202 /* FTSmallPreview.xib */; };
-		A9CE5FC920F3321500DBF202 /* BKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CE5FC820F3321400DBF202 /* BKeyboard.framework */; };
 		A9CE5FD220F333F200DBF202 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CE5FD120F333F200DBF202 /* AppDelegate.m */; };
 		A9CE5FD520F333F200DBF202 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CE5FD420F333F200DBF202 /* ViewController.m */; };
 		A9CE5FD820F333F200DBF202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CE5FD620F333F200DBF202 /* Main.storyboard */; };
 		A9CE5FDA20F333F300DBF202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CE5FD920F333F300DBF202 /* Assets.xcassets */; };
 		A9CE5FDD20F333F300DBF202 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CE5FDB20F333F300DBF202 /* LaunchScreen.storyboard */; };
 		A9CE5FE020F333F300DBF202 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CE5FDF20F333F300DBF202 /* main.m */; };
-		A9CE5FE520F334CE00DBF202 /* BKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CE5FC820F3321400DBF202 /* BKeyboard.framework */; };
 		A9CE68F420F4820100DBF202 /* FTSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CE68F220F4820100DBF202 /* FTSettingController.m */; };
 		A9CE68F520F4820100DBF202 /* FTSettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CE68F320F4820100DBF202 /* FTSettingController.xib */; };
 /* End PBXBuildFile section */
@@ -54,6 +54,7 @@
 		A92142B9210C65D6004F9318 /* FTEmojiCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTEmojiCell.m; sourceTree = "<group>"; };
 		A92142BA210C65D6004F9318 /* FTEmojiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FTEmojiCell.xib; sourceTree = "<group>"; };
 		A9301DDC20FB4A0F000EAF9D /* ATProxy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ATProxy.framework; sourceTree = "<group>"; };
+		A9309FA422180F0000237B55 /* BlankKeyboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BlankKeyboard.framework; sourceTree = "<group>"; };
 		A98964CB20F4B4FD0057FFFB /* OvalMaskTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OvalMaskTransition.h; sourceTree = "<group>"; };
 		A98964CE20F5960E0057FFFB /* OvalMaskTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OvalMaskTransition.m; sourceTree = "<group>"; };
 		A98964D320F5A7F90057FFFB /* EmojiImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmojiImage.h; sourceTree = "<group>"; };
@@ -94,7 +95,6 @@
 		A9CE5FAF20F331FC00DBF202 /* FTPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPreviewView.h; sourceTree = "<group>"; };
 		A9CE5FB020F331FC00DBF202 /* FTPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPreviewView.m; sourceTree = "<group>"; };
 		A9CE5FB120F331FC00DBF202 /* FTSmallPreview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTSmallPreview.xib; sourceTree = "<group>"; };
-		A9CE5FC820F3321400DBF202 /* BKeyboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BKeyboard.framework; sourceTree = "<group>"; };
 		A9CE5FCE20F333F200DBF202 /* KeyboardMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CE5FD020F333F200DBF202 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9CE5FD120F333F200DBF202 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9301DDF20FB4BA5000EAF9D /* ATProxy.framework in Frameworks */,
-				A9CE5FC920F3321500DBF202 /* BKeyboard.framework in Frameworks */,
+				A9309FA522180F0100237B55 /* BlankKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9301DDE20FB4B98000EAF9D /* ATProxy.framework in Frameworks */,
-				A9CE5FE520F334CE00DBF202 /* BKeyboard.framework in Frameworks */,
+				A9309FA622180F0100237B55 /* BlankKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +144,8 @@
 		A9CE5F5520F331AB00DBF202 = {
 			isa = PBXGroup;
 			children = (
+				A9309FA422180F0000237B55 /* BlankKeyboard.framework */,
 				A9301DDC20FB4A0F000EAF9D /* ATProxy.framework */,
-				A9CE5FC820F3321400DBF202 /* BKeyboard.framework */,
 				A9CE5F7C20F331CA00DBF202 /* FTKeyboard */,
 				A9CE5FCF20F333F200DBF202 /* KeyboardMan */,
 				A9CE5F5F20F331AB00DBF202 /* Products */,
